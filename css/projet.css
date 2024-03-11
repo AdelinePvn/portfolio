@@ -1,0 +1,182 @@
+#cell_projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(400%) !important;
+}
+
+.projects {
+  margin: auto;
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  -ms-flex-line-pack: distribute;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: "Rubik";
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px 0px;
+}
+
+.projects .project {
+  height: auto;
+  width: 45%;
+  max-width: 300px;
+  min-height: 120px;
+  margin: 2% 1%;
+  background-color: rgb(236, 236, 236);
+  position: relative;
+  transition: all 1s;
+  display: flex;
+  justify-content: space-around;
+}
+
+.projects .project::after {
+  content: "";
+  position: absolute;
+  top: -19%;
+  left: 0;
+  height: 20%;
+  width: 100%;
+  clip-path: polygon(0 100%, 0 50%, 100% 0, 100% 100%);
+  background-color: rgb(236, 236, 236);
+}
+
+.projects .project .lang {
+  transform: rotate(3deg);
+  display: block;
+  position: absolute;
+  top: -20%;
+  left: -10px;
+  height: 20px;
+  z-index: 3;
+  padding: 5px;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 90%, 20% 100%);
+  font-weight: bold;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+}
+
+.projects .project .more {
+  transform: rotate(3deg);
+  display: block;
+  position: absolute;
+  top: -25%;
+  right: -10px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  z-index: 3;
+  padding: 5px;
+  clip-path: polygon(14% 16%, 93% 5%, 93% 90%, 0 94%);
+  font-weight: bold;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+}
+
+.projects .project .title {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  width: 70%;
+  height: auto;
+  font-size: 25px;
+  padding: 30px 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  color: rgb(46, 46, 46);
+  z-index: 5;
+  word-spacing: 100vw;
+  text-align: right;
+}
+
+.projects .project .buttons {
+  display: flex;
+  width: 30%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.projects .project .buttons .button {
+  position: relative;
+  display: block;
+  width: 50%;
+  padding-top: 50%;
+  clip-path: polygon(25% 0%, 97% 5%, 99% 86%, 11% 71%);
+}
+
+.projects .project .buttons .button svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  width: 55%;
+  height: 55%;
+}
+
+.projects .project .buttons .button.github {
+  margin-top: -50%;
+  margin-right: -30%;
+}
+
+.projects .project .buttons .button.github svg {
+  margin-top: -10%;
+  margin-left: 10%;
+}
+
+.projects .project .buttons .button.disable {
+  opacity: 0.3;
+}
+
+.projects .project .buttons .button.look {
+  clip-path: polygon(14% 19%, 80% 7%, 99% 86%, 20% 81%);
+  margin-bottom: -50%;
+  margin-left: -30%;
+}
+
+.projects .project .buttons .button.look svg {
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .projects .project {
+    margin: 5% 1%;
+    margin-top: 4vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #cell_projects{
+    width: 100%;
+  }
+  .projects {
+    margin: 0;
+    margin-top: 4vh;
+  }
+
+  .projects .project {
+    width: 60%;
+    max-width: none;
+    min-height: 120px;
+    margin: 10% 0%;
+  }
+
+  .projects .project .title {
+    font-size: 20px;
+  }
+}

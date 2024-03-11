@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/presentation.css" />
+    <link rel="stylesheet" href="css/knowledge.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/projet.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu|Rubik"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+    />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/flickity-fullscreen@2.0.0/fullscreen.min.css
+"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.css"
+      integrity="sha512-TZTUnuHs1njGko8PJqZlHzqZTZd880A+BvhR1jy1v4mWB4VFKVLG/eK9LYdDjxqNLmttSC1ygmqg6rkYjnEgaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js"
+      integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flickity-hash@2.0.1/hash.min.js"></script>
+    <script src="
+https://cdn.jsdelivr.net/npm/flickity-fullscreen@2.0.0/fullscreen.min.js
+"></script>
+    <script
+      async
+      defer
+      src="https://use.fontawesome.com/releases/v6.5.1/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <img src="img/menu.png" alt="" />
+      <div class="content">
+        <a href="#cell_header">Accueil</a>
+        <a href="#cell_description">Description</a>
+        <a href="#carousel-knowledge">Compétences</a>
+        <a href="#carousel-experience">Expériences</a>
+        <a href="#cell_projects">Projets</a>
+      </div>
+    </nav>
+    <div class="carousel" data-flickity='{ "contain": true }'>
+      <div class="carousel-cell header" id="cell_header">
+        <h1>Portfolio</h1>
+        <h2>Développeur Front-End</h2>
+      </div>
+      <div class="carousel-cell" id="cell_description">
+        <div class="presentation">
+          <div class="content">
+            <p class="first">
+              Je suis <span class="name">Adeline</span> développeuse
+              <span class="job">Front-End</span>
+            </p>
+            <p class="description">
+              Passionné par le web depuis mes 15 ans, j'ai appris à évoluer dans
+              ce milieu et à me mettre à jour sur les technologie. J'ai beaucoup
+              appris via ma formation chez OpenClassRooms, que ce soit en HTML,
+              CSS, JS , REACT ...
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell" id="carousel-knowledge">
+        <div class="title">
+          <h1>Compétences</h1>
+        </div>
+        <div class="knowledges">
+          <div class="knowledge">
+            <div class="shape"></div>
+            <div class="content">
+              <div class="title">HTML</div>
+              <div class="percentage">70%</div>
+            </div>
+          </div>
+          <div class="knowledge">
+            <div class="shape"></div>
+            <div class="content">
+              <div class="title">CSS</div>
+              <div class="percentage">60%</div>
+            </div>
+          </div>
+          <div class="knowledge">
+            <div class="shape"></div>
+            <div class="content">
+              <div class="title">JS</div>
+              <div class="percentage">50%</div>
+            </div>
+          </div>
+          <div class="knowledge">
+            <div class="shape"></div>
+            <div class="content">
+              <div class="title">REACT</div>
+              <div class="percentage">40%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell" id="carousel-experience">
+        <div class="title">
+          <h1>Expériences</h1>
+        </div>
+        <div class="experiences">
+          <div class="experience">
+            <div class="title">
+              <h2>OpenClassRooms</h2>
+              <span>2022 - 2024</span>
+            </div>
+            <div class="content">Formation Intégration Web</div>
+          </div>
+          <div class="experience">
+            <div class="title">
+              <h2>Baccaulauréat STI2D</h2>
+              <span>2018 - 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell" id="cell_projects">
+        <div class="title">
+          <h1>Projets</h1>
+        </div>
+        <div class="projects">
+          <div class="project">
+            <div class="lang">HTML</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Riding Cities</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Ce projet a pour but de vous faire découvrir le langage
+                    HTML, très populaire parmi les développeurs web.<br />
+                    Il est très guidé et vous accompagnera étape par étape dans
+                    l'acquisition des fondamentaux du langage.<br />
+                    Vous l'utiliserez bientôt pour développer des sites plus
+                    ambitieux, mais dans un premier temps, faites vos premiers
+                    pas sur HTML...<br />
+                    Idéalement, réaliser ce projet vous prendra 1 à 2 semaines
+                    maximum (si vous êtes à temps plein sur votre formation).<br />
+                    Vous serez exclusivement accompagné par votre mentor, tant
+                    pour la réalisation des livrables que pour la soutenance,
+                    qui se fera sous forme de discussion.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/_OC-P2"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://riding-cities-ap.netlify.app"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+            <h3 class="title">#Riding Cities</h3>
+          </div>
+          <div class="project">
+            <div class="lang">HTML / CSS</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Booki</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    L’entreprise souhaite développer un site Internet qui
+                    permette aux usagers de trouver des hébergements et des
+                    activités dans la ville de leur choix.<br />
+                    Vous êtes chargé d'intégrer l'interface du site avec du code
+                    HTML et CSS. Pour cela, vous travaillez en étroite
+                    collaboration avec Sarah, la CTO, et Loïc, l’UI designer.
+                    <br />
+                    Sarah vous envoie un e-mail pour vous présenter l’avancée du
+                    projet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/-OC-P3"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://booki-oc-ap.netlify.app"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Booki</h3>
+          </div>
+          <div class="project">
+            <div class="lang">HTML / CSS</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Ohmyfood</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous avez intégré Ohmyfood en tant que développeur junior.
+                    Il s’agit d’une jeune startup qui voudrait s'imposer sur le
+                    marché de la restauration. Déjà présente à New-York, elle
+                    souhaite désormais faire sa place à Paris.<br />
+                    Votre mission est de développer un site “mobile first” qui
+                    répertorie les menus de restaurants gastronomiques. En plus
+                    des systèmes classiques de réservation, les clients pourront
+                    composer le menu de leur repas pour que les plats soient
+                    prêts à leur arrivée. Finis, les temps d'attente au
+                    restaurant !<br />
+
+                    L’équipe commerciale a déjà réussi à convaincre 4
+                    restaurateurs d’utiliser la plateforme OhMyFood. Paul décide
+                    alors que le site contiendra 4 menus dans un premier temps.
+                    <br />
+
+                    À deux, vous avez pu établir ce brief créatif pour
+                    rassembler toutes les informations clés du projet de
+                    développement du site.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/OC-P4"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://oc-ohmyfood.netlify.app/"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#ohmyfood</h3>
+          </div>
+          <div class="project">
+            <div class="lang">JS</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Print It!</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Ce projet a pour but de vous faire découvrir le langage
+                    JavaScript, très populaire parmi les développeurs web. Il
+                    est très guidé et vous accompagnera étape par étape dans
+                    l'acquisition des fondamentaux du langage. Vous l'utiliserez
+                    bientôt pour développer des sites plus ambitieux, mais dans
+                    un premier temps, faites vos premiers pas sur
+                    JavaScript...<br />
+
+                    Idéalement, réaliser ce projet vous prendra 1 à 2 semaines
+                    maximum (si vous êtes à temps plein sur votre formation).
+                    Vous serez exclusivement accompagné par votre mentor, tant
+                    pour la réalisation des livrables que pour la soutenance,
+                    qui se fera sous forme de discussion.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/OC-P5"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://print-it-oc.netlify.app/"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Print It!</h3>
+          </div>
+          <div class="project">
+            <div class="lang">JS</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Sophie Bluel</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous travaillez comme développeur front-end pour l’agence
+                    ArchiWebos qui comprend 50 salariés. <br />
+
+                    Ayant terminé votre dernier projet avec un peu d'avance,
+                    vous êtes envoyé en renfort comme développeur front-end
+                    d’une équipe qui travaille sur la conception du site
+                    portfolio d’une architecte d’intérieur.<br />
+
+                    Nous sommes lundi matin et c’est l’heure de votre premier
+                    brief d’équipe pour ce projet.<br />
+
+                    Vous savez que vous allez recevoir beaucoup d’informations,
+                    vous vous préparez donc à prendre des notes.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/Portfolio-architecte-sophie-bluel"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Sophie Bluel</h3>
+          </div>
+          <div class="project">
+            <div class="lang">JS</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Menu Maker</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous êtes développeur front-end au sein de l’agence
+                    Webgencia. <br />
+
+                    Cette semaine, on vous confie une mission un peu différente
+                    de d’habitude. Il ne s’agit pas de développer un site mais
+                    de mener, préparer et planifier le projet de développement
+                    d’un site.<br />
+
+                    En effet, Qwenta, un de vos clients, souhaite faire
+                    développer un “Menu Maker”. Il s’agit d’un site permettant
+                    aux restaurateurs d’afficher et de mettre en page leurs
+                    menus facilement, en quelques clics. <br />
+
+                    C’est l’occasion pour vous de mettre en place une
+                    méthodologie de travail agile et de collaborer avec
+                    Soufiane, Product Owner.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="title">#Menu Maker</h3>
+          </div>
+          <div class="project">
+            <div class="lang">REACT</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Kasa</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Kasa vous recrute en tant que développeur front-end en
+                    freelance pour développer sa nouvelle plateforme web. Kasa
+                    est dans le métier de la location d’appartements entre
+                    particuliers depuis près de 10 ans maintenant. Avec plus de
+                    500 annonces postées chaque jour, Kasa fait partie des
+                    leaders de la location d’appartements entre particuliers en
+                    France.<br />
+
+                    L'occasion parfaite pour vous d'ajouter une belle référence
+                    à votre portfolio de freelance !<br />
+
+                    Le site de Kasa a été codé il y a maintenant plus de 10 ans
+                    en ASP.NET avec un code legacy important. Laura, la CTO, a
+                    donc lancé une refonte totale pour passer à une stack
+                    complète en JavaScript avec NodeJS côté back-end, et React
+                    côté front-end. Kasa en a également profité pour commander
+                    de nouvelles maquettes auprès de son designer habituel, qui
+                    est en freelance. Un gros chantier pour cette année !
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/OC-P8"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://kasa-oc-ap.netlify.app/"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Kasa</h3>
+          </div>
+          <div class="project">
+            <div class="lang">SEO</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Nina Carducci</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous êtes développeur freelance et vous décidez de proposer
+                    vos services d’optimisation SEO à de nouveaux clients. Pour
+                    ce faire, vous avez analysé plusieurs sites internet. Vous
+                    avez ensuite pris contact avec les administrateurs des sites
+                    qui peuvent être optimisés pour leur proposer vos services.
+                    <br />
+
+                    Parmi vos prospects, il y a le site de Nina Carducci, une
+                    photographe dont vous a parlé l’un de vos amis.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/ninacarducci.github.io"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://oc-projet-9-ap.netlify.app/"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Nina Carducci</h3>
+          </div>
+          <div class="project">
+            <div class="lang">Debug REACT / TEST</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>724 events</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous êtes développeur front-end freelance, et l’agence
+                    évènementielle 724events vous contacte pour une mission.<br />
+
+                    L’agence souhaite publier la nouvelle version de son site
+                    vitrine. Il s’agit d’un site one-page. <br />
+
+                    Le design a été validé, et un premier développeur freelance
+                    a commencé l’intégration il y a quelques semaines.
+                    Malheureusement, ce freelance a dû abandonner le projet pour
+                    raisons personnelles. Le site est fonctionnel, mais quelques
+                    bugs entravent le bon usage par les visiteurs. 724events
+                    fait donc appel à vous pour finaliser le travail.<br />
+
+                    Vous rencontrez Jean-Baptiste, le directeur Marketing de
+                    l’agence, en visioconférence pour qu’il vous présente plus
+                    précisément le projet.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/Debuggez-une-application-React.JS"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                target="_blank"
+                class="look button"
+                href="https://724events-oc-ap.netlify.app/"
+                ><i class="fas fa-eye"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#724 events</h3>
+          </div>
+          <div class="project">
+            <div class="lang">REACT</div>
+            <div class="more"><i class="fas fa-ellipsis"></i></div>
+            <div class="modal-data">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2>Argent Bank</h2>
+                  <span class="close"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Vous venez d’intégrer Argent Bank comme développeur
+                    front-end.<br />
+                    Argent Bank est une nouvelle banque en ligne qui souhaite
+                    percer dans le secteur bancaire.<br />
+
+                    Vous travaillez avec Mila, la cheffe de projet, pour la mise
+                    en place du tableau de bord des utilisateurs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <a
+                target="_blank"
+                class="github button"
+                href="https://github.com/AdelinePvn/Projet_11"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+
+            <h3 class="title">#Argent Bank</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="content"></div>
+    </div>
+    <div class="cursor"></div>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="js/outils.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/experience.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/modal.js"></script>
+</html>
